@@ -1,0 +1,27 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs
+/jquery/1.4.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <link href="css/style.css" rel="stylesheet"/>
+    
+    <title>HW4 Search Engine</title>
+</head>
+<body>
+    <h1>HW4 Search Engine</h1>
+    
+    <div class="content">
+        <form action="cgi-bin/get_res.py" onsubmit="return validate_form(this)" method="get" >
+            <input type="radio" name="method" value="default" checked>default
+            <br>
+            <input type="radio" name="method" value="page_rank">page rank
+            <br>
+            <input type="text" name="query" id="query" placeholder="query"/>
+            <input type="submit" value="search" />
+        </form>
+        <ul class="list"></ul>
+    </div>
+</body>
+</html>

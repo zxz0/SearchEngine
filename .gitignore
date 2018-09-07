@@ -1,2 +1,7 @@
 # Mac:
 .DS_Store
+
+*.pyc
+__pycache__/
+
+data/
