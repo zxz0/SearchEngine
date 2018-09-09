@@ -12,8 +12,9 @@ A simple search engine.
 * [SolrClient](https://github.com/moonlitesolutions/SolrClient) - A simple python library for Solr.
 * [jQuery](https://jquery.com/) - A fast, small, and feature-rich JavaScript library.
 * [list autocomplete](https://cuiqingcai.com/1573.html) - Implementation of autocomplete using jQuery.
-* [networkx](https://networkx.github.io/) -  A Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
+* [NetworkX](https://networkx.github.io/) -  A Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
 * [Beautiful Soup 4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) - A Python library for pulling data out of HTML and XML files.
+* [Tika](https://tika.apache.org/) -  A content analysis toolkit detecting and extracting metadata and text from over a thousand different file types (such as PPT, XLS, and PDF).
 
 ### Todos
  - Resumable
