@@ -1,0 +1,144 @@
+:root {
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+	font-family: Lato, Helvetica, sans-serif;
+	text-align: left;
+	padding: 10px;
+	margin: 10px;
+	overflow: scroll;
+}
+
+#title {
+  color: black;
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.alg_choice {
+  margin: 5px;
+}
+
+.alg_choice label {
+  margin: 0 5px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+#query{
+  width: 50%;
+  padding: 10px;
+  /*caret-color: red;*/
+  border-radius: 2px;
+}
+
+#query:hover, #query:focus {
+  box-shadow: 0 0 10px 2px #888888;
+}
+
+#submit_button {
+  background-color: #6288a5;
+  border: 1px solid #326891;
+  border-radius: 2px; 
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0 0 0 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+#submit_button:hover {
+  background-color: #326891;
+  border: 1px solid #326891;
+  color: white;
+}
+
+#statistic {
+  margin: 10px 0;
+}
+
+.item {
+  margin: 10px 0;
+}
+
+.entry_urlid {
+  font-size: 10px;
+}
+
+.entry_snippet {
+  font-size: 15px;
+}
+
+#spell_corr {
+  /*color: red;*/
+}
+
+.ui-autocomplete {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 9999 !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+  float: left;
+  display: none;
+  min-width: 160px;   
+  padding: 4px 0;
+  margin: 0 0 10px 25px;
+  list-style: none;
+  background-color: white;
+  border-color: #ccc;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+}
+
+.ui-menu-item > a.ui-corner-all {
+  display: block;
+  padding: 3px 15px;
+  clear: both;
+  font-weight: normal;
+  line-height: 18px;
+  color: black;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.ui-state-hover, .ui-state-active {
+  color: white;
+  text-decoration: none;
+  background-color: #6288a5;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  background-image: none;
+}
+
+.ui-helper-hidden-accessible {
+  display: none;
+}

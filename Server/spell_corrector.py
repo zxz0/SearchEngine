@@ -23,7 +23,7 @@ def correction(word):
 
 # Generate possible spelling corrections for word.
 def candidates(word):
-    return (known([word]) or known(edits1(word)) or known(edits2(word)) or [word])
+    return (known([word]) or known(edits1(word)) or known(edits2(word)) or [word])  # if no suggestion within edit distance 2, treat as known, return the original word
 
 # The subset of 'words' that appear in the dictionary of WORDS.
 def known(words):

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <link href="{{ url_for('static', filename='css/home_style.css') }}" type="text/css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Lato" type="text/css" rel="stylesheet">
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+  <title>News Search Engine</title>
+</head>
+
+<body>
+  {% for message in get_flashed_messages() %}
+  <div class="error">{{ message }}</div>
+  {% endfor %}
+  <nav>
+    <h1><a href="{{ url_for('index') }}" id="title">News Search Engine</a></h1>
+  </nav>
+
+  <div class="content">
+    <form action="/results" onsubmit="return validate_form(this)" method="get" >
+
+      <div class="alg_choice">
+        <label>
+          <input type="radio" id="defalt" name="sorting_method" value="default" checked>Default Sorting
+        </label>
+        <label>
+          <input type="radio" id="pagerank" name="sorting_method" value="page_rank">PageRank
+        </label>
+      </div>
+
+      <div class="sub_area">
+        <input type="text" name="query" id="query" placeholder="Search something..."/>
+        <button type="submit" value="search" id="submit_button">search</button>
+      </div>
+      
+    </form>
+  </div>
+</body>
+
+</html>
